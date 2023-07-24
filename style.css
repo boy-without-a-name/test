@@ -1,0 +1,198 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+}
+
+span{
+  color:white;
+  padding-left: 1rem;
+  text-transform: capitalize;
+  font-size:  1rem;
+}
+.main{
+    margin:2rem 2rem;
+}
+
+.routerContainer{
+    display: flex;
+    gap:1rem;
+}
+
+.controlContainer, .updateContainer, .raceContainer{
+    margin-top: 1rem;
+    display: flex;
+    gap:1rem;
+    align-items: center
+}
+
+.garageContainer{
+    margin-top: 1rem;
+}
+
+.garageP{
+    text-transform: uppercase;
+    color:white;
+}
+
+.pageP{
+    text-transform: capitalize;
+    color:white;
+    margin-top: 1rem;
+}
+
+.carContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.carContainer{
+  position: relative;
+}
+
+
+
+.btnCreate, .btnGen,.selectBtn, .removeBtn{
+    text-transform: uppercase;
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(11, 10, 12);
+    border-radius: 7px;
+    background: rgb(88, 98, 149);
+    transition: box-shadow .2s, border-color .2s;
+}
+
+
+.btnCreate:active, .btnGen:active, .selectBtn:active, .removeBtn:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgb(136, 125, 31);
+}
+
+.selectBtn, .removeBtn {
+    margin-right: 1rem;
+}
+
+.engineBtn{
+    margin: 0rem 0.5rem;
+    padding: 0.4rem;
+}
+
+.stopEngineBtn{
+    padding: 0.4rem; 
+}
+
+.imgCar{
+    background-image: url('./car.svg');
+}
+
+svg{
+    width: auto;
+    height: 3rem;
+    position: relative;
+    left: 0px;
+}
+.carContainer .flag{
+    position: absolute;
+    left:85%;
+    top:45%
+  }
+.flag{
+    background-image: url('red-flag.svg');
+    width:30px;
+    height: 30px;
+}
+
+hr{
+    border-top: 4px dashed white;
+    position: relative;
+    bottom:9px
+}
+.btnGarage, .raceBtn, .resetBtn{
+    text-transform: uppercase;
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(250,172,17);
+    transition: box-shadow .2s, border-color .2s;
+}
+
+.btnGarage:active, .raceBtn:active, .resetBtn:hover {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgb(179, 161, 8);
+}
+
+.numWin{
+    color:white;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.info{
+    width: 527px;
+    display: flex;
+    color:white;
+    font-size: 1.5rem;
+    gap:1rem;
+    margin-top: 2rem;
+    background: #b92b27;  
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.winner{
+    width: 528px;
+    display: flex;
+    color:white;
+    font-size: 1rem;
+    gap:4rem;
+    background: #277fb9;  
+    align-items: flex-start;
+}
+
+.name{
+    width: 30px;
+}
+.wins{
+    padding-left: 20px;
+}
+.time{
+    padding-left: 34px;
+}
+.svgWinner{
+    left:34px
+}
+
+div.hatContainer > div.info > p:nth-child(4){
+    cursor: pointer;
+}
+div.hatContainer > div.info > p:nth-child(5){
+    cursor: pointer;
+}
+.show{
+    z-index: 2;
+    font-size: 2rem;
+    position: absolute;
+    color:white;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+}
