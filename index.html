@@ -1,10 +1,124 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>AsyncRace</title>
-    <link href="style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="index.js"></script></head>
-  <body>
-  </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>NLP</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>What is NLP?</section>
+					<section>
+						<p>Natural language processing (NLP) is a machine learning technology that gives computers the ability to interpret, manipulate, and comprehend human language.</p>
+					</section>
+				</section>
+				<section>
+					<section>Why is NLP important?</section>
+					<section>
+						<ul>
+							<li>Process, analyze, and archive large documents</li>
+							<li>Analyze customer feedback or call center recordings</li>
+							<li>Run chatbots for automated customer service</li>
+							<li>Answer who-what-when-where questions</li>
+							<li>Classify and extract text</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Voice assistants</li>
+							<li>Google spam</li>
+						</ul>
+				</section> 
+				    </section>
+					<section>
+						<section>Tokenization</section>
+						<section><p>Mr. Adams mayor of the City of London.<br> Mrs. Alice his wife.</p>
+						</section>
+						<section>
+							<h2>example without using the library:</h2>
+							<p>Mr</p>
+							<p>Adams mayor of the City of London</p>
+							<p>Mrs</p>
+							<p>Alice his wife</p></section>
+						<section>
+							<h2>Example using the library:</h2>
+							<p>Mr. Adams mayor of the City of London</p>
+							<p>Mrs. Alice his wife</p>
+				   </section>
+					</section> 
+					<section>
+						<section><h4>Lemmatization and stemming</h4>
+							<p>Stemming is a crude heuristic process that cuts off "excess" from the root of words, often resulting in the loss of derivational suffixes.</p>
+							<p>Lemmatization is a more subtle process that uses vocabulary and morphological analysis to eventually reduce a word to its canonical form, the lemma.
+							</p>
+						</section>
+						<section>
+							<h3>Example:</h3>
+							<ul>
+								<li>good - better</li>
+								<li>play - playing</li>
+								<li>meeting - to meet</li>
+
+						</section>
+					</section>
+				<section>
+					<section 
+					data-background-image="assets/xrfqju0nbugayjd8cnkvlcbiuwa.png"
+					data-background-size="400px">
+					</section>
+					<section
+					data-background-image="assets/3.jpg"
+					data-background-size="1000px">
+				</section>
+			    </section>
+				<section>
+					<section><h2>Resolution of coreference</h2></section>
+					<section
+					data-background-image="assets/4.jpg"
+					data-background-size="1000px"></section>
+				</section>
+				<section>
+					<section>
+						<p>Parsing dependencies.</p>
+					</section>
+					<section
+					data-background-image="assets/1.png"
+					data-background-size="1000px">
+					</section>
+				</section>
+				<section>
+					<h3>Translation of the processed text into vector form.</h3>
+					<p>This step allows you to generate vector representations of words.<br>Thus, words used in the same context have similar vectors.</p>
+				</section>
+				<section>Building a model depending on the goal</section>
+				<section>Thanks for watching</section>
+			</div>
+		</div>
+	<!-- Test -->
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
